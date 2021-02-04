@@ -4,7 +4,7 @@
 /**
  * main - last digit
  * Description: used if statement
- * Return: voif
+ * Return: void
 */
 int main(void)
 {
