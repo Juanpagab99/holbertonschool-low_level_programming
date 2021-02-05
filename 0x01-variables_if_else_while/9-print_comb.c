@@ -13,8 +13,8 @@ int main(void)
 		putchar(a);
 		if (a < 57)
 		{
-			putchar(",");
-			putchar(" ");
+			putchar(44);
+			putchar(32);
 		}
 		a++;
 	}
