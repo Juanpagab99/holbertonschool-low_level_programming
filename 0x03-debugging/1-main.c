@@ -1,24 +1,24 @@
-# incluye  < stdio.h >
+#include <stdio.h>
 
-/ * *
- * main - provoca un bucle infinito
- * Devolución: 0
- * /
+/**
+ * main - causes an infinite loop
+ * Return: 0
+ */
 
-int  main ( vacío )
+int main(void)
 {
 	int i;
 
-	printf ( " Bucle infinito entrante :( \ n " );
-	/ * *
+	printf("Infinite loop incoming :(\n");
+	/**
 	 * i = 0;
 	 *
-	 * mientras (i <10)
+	 * while (i < 10)
 	 * {
-	 * putchar (i);
-	 *}
-	 * /
-	printf ( "¡ Bucle infinito evitado! \\ o / \ n " );
+	 *	putchar(i);
+	 * }
+	 */
+	printf("Infinite loop avoided! \\o/\n");
 
-	return ( 0 );
+	return (0);
 }
