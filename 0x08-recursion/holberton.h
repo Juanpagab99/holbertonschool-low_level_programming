@@ -9,3 +9,5 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 int inverse_pow(int n, int c);
 int prime(int x, int i);
+int length(char *s, int i);
+int compare(char *s, int i, int j);
