@@ -12,13 +12,25 @@ char *str_concat(char *s1, char *s2)
 	int suma;
 	char *arr;
 
-	for (i = 0; s1[i] != '\0'; i++)
+	if (s1 == NULL)
 	{
-		i++;
+		i = 0;
 	}
-	for (j = 0; s2[j] != '\0'; j++)
+	else
 	{
-		j++;
+		for (i = 0; s1[i] != '\0'; i++)
+		{
+		}
+	}
+	if (s2 == NULL)
+	{
+		j = 0;
+	}
+	else
+	{
+		for (j = 0; s2[j] != '\0'; j++)
+		{
+		}
 	}
 	suma = i + 1 + j;
 	arr = malloc(suma * sizeof(char));
