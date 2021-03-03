@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 	if (coin < 0)
 	{
 		printf("0\n");
+		return (1);
 	}
 	value = change(coin);
 	printf("%d\n", value);
