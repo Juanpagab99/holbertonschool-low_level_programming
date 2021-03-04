@@ -3,7 +3,7 @@
 /**
  * alloc_grid - dimensional array
  * @width: array width
- * @heigth: array heigth
+ * @height: array heigth
  * Return: int
  */
 int **alloc_grid(int width, int height)
