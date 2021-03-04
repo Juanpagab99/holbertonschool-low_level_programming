@@ -9,7 +9,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int lens1, lens2, i, j = 0, suma;
+	unsigned int lens1, lens2, i, j = 0;
+	int suma;
 	char *arr;
 
 	if (s1 == NULL || s1 == '\0')
