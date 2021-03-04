@@ -12,11 +12,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, j, k, suma;
 	char *arr;
 
-	for (i = 0; s1[i] != '\0'; i++)
+	if (s1 == NULL)
 	{
+		i = 0;
 	}
-	for (j = 0; s2[j] != '\0'; j++)
+	else
 	{
+		for (i = 0; s1[i] != '\0'; i++)
+		{
+		}
+	}
+	if (s2 == NULL)
+	{
+		j = 0;
+	}
+	else
+	{
+		for (j = 0; s2[j] != '\0'; j++)
+		{
+		}
 	}
 	if (n >= j)
 	{
@@ -29,13 +43,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 	for (k = 0; k < i; k++)
-	{
 		arr[k] = s1[k];
-	}
 	for (k = 0; k < n; k++)
-	{
 		arr[i + k] = s2[k];
-	}
 	arr[i + j] = '\0';
 	return (arr);
 }
