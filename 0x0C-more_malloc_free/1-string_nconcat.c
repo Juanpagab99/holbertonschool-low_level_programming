@@ -9,8 +9,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int lens1, lens2, i, j = 0;
-	int suma;
+	unsigned int lens1 = 0, lens2 = 0, i, j = 0;
 	char *arr;
 
 	if (s1 == NULL || s1 == '\0')
@@ -29,8 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (n >= lens2)
 		n = lens2;
-	suma = lens1 + n + 1;
-	arr = malloc(suma * sizeof(char));
+	arr = malloc(sizeof(char) * (lens1 + n + 1));
 	if (arr == NULL)
 		return (NULL);
 	for (i = 0; i < lens1; i++)
