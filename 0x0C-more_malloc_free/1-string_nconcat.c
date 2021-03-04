@@ -9,43 +9,33 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, k, suma;
+	unsigned int lens1, lens2, i, j = 0, suma;
 	char *arr;
 
 	if (s1 == NULL)
-	{
-		i = 0;
-	}
+		lens1 = 0;
 	else
 	{
 		for (i = 0; s1[i] != '\0'; i++)
-		{
-		}
+			lens1++;
 	}
 	if (s2 == NULL)
-	{
-		j = 0;
-	}
+		lens2 = 0;
 	else
 	{
-		for (j = 0; s2[j] != '\0'; j++)
-		{
-		}
+		for (i = 0; s2[i] != '\0'; i++)
+			lens2++;
 	}
-	if (n >= j)
-	{
-		return (s2);
-	}
-	suma = i + 1 + j;
+	if (n >= lens2)
+		n = lens2;
+	suma = lens1 + n + 1;
 	arr = malloc(suma * sizeof(char));
 	if (arr == NULL)
-	{
 		return (NULL);
-	}
-	for (k = 0; k < i; k++)
-		arr[k] = s1[k];
-	for (k = 0; k < n; k++)
-		arr[i + k] = s2[k];
-	arr[i + j] = '\0';
+	for (i = 0; i < lens1; i++)
+		arr[i] = s1[i];
+	for (i = lens1; i < lens1 + n; i++, j++)
+		arr[i] = s2[j];
+	arr[lens1 + n] = '\0';
 	return (arr);
 }
