@@ -12,14 +12,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int lens1, lens2, i, j = 0, suma;
 	char *arr;
 
-	if (s1 == NULL)
+	if (s1 == NULL || s1 == '\0')
 		lens1 = 0;
 	else
 	{
 		for (i = 0; s1[i] != '\0'; i++)
 			lens1++;
 	}
-	if (s2 == NULL)
+	if (s2 == NULL || s2 == '\0')
 		lens2 = 0;
 	else
 	{
