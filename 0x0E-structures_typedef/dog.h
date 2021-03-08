@@ -2,9 +2,9 @@
 #define _DOG_H_
 /**
  * struct dog - dogs information
- * @name:
- * @age:
- * @owner:
+ * @name: name
+ * @age: age
+ * @owner: owner
  * Description: information for Django
  */
 struct dog
