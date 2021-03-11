@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <3-calc.h>
+#include "3-calc.h"
 #include <stdlib.h>
 /**
  * main - calculator
@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	f = get_op_func(argv[2])
-		/*make a police for pointer*/
-		if (f == NULL)
+	f = get_op_func(argv[2]);
+	/*make a police for pointer*/
+	if (f == NULL)
 	{
 		printf("Error\n");
 		exit(99);
