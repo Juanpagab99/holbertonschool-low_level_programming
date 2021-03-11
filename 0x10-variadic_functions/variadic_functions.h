@@ -2,10 +2,11 @@
 #define _VARIADIC_FUNCTIONS_H_
 
 /**
- * struct in_format - Struct for formats
+ * struct _format - Struct for formats
  *
  * @n: The format
  * @func: The function associated
+ * function pointer
  */
 typedef struct _format
 {
