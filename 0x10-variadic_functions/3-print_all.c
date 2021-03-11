@@ -73,6 +73,7 @@ void print_all(const char *const format, ...)
 				printf("%s", empty);
 				struc_format[j].func(_printf);
 				empty = separator;
+				/* ","*/
 			}
 			j++;
 		}
