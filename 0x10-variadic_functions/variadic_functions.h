@@ -19,5 +19,9 @@ int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char *const format, ...);
+void print_c(va_list _printf);
+void print_i(va_list _printf);
+void print_f(va_list _printf);
+void print_s(va_list _printf);
 
 #endif /* _VARIADIC_FUNCTIONS_H_ */
