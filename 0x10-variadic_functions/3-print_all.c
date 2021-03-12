@@ -39,7 +39,7 @@ void print_s(va_list _printf)
 
 	p = va_arg(_printf, char *);
 	if (p == NULL)
-		printf("(nil)");
+		p = "(nil)";
 	printf("%s", p);
 }
 /**
