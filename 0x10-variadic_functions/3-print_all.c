@@ -40,8 +40,7 @@ void print_s(va_list _printf)
 	p = va_arg(_printf, char *);
 	if (p == NULL)
 		printf("(nil)");
-	else
-		printf("%s", p);
+	printf("%s", p);
 }
 /**
  * print_all - print all
