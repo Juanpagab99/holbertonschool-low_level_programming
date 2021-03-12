@@ -62,7 +62,7 @@ void print_all(const char *const format, ...)
 
 	va_start(_printf, format);
 	i = 0;
-	while (format != '\0' && format[i] != '\0')
+	while (format && format[i] != '\0')
 	{
 		j = 0;
 		while (struc_format[j].n != '\0')
